@@ -6,13 +6,7 @@ import UserCenter from '../pages/UserCenter';
 
 
 import AboutMe from '../components/AboutMe';
-import Game from '../components/game/Game';
-import Gobang from '../components/game/Gobang';
-import Tank from '../components/game/Tank';
 import Initialization from '../components/Initialization';
-import SVGStudy from '../components/SVGStudy';
-import VuexDemo from '../components/VuexDemo';
-import WXModuleTool from '../components/WXModuleTool';
 
 export const navRouterArr = [
     {
@@ -23,60 +17,6 @@ export const navRouterArr = [
             title: "首页",
             icon: "el-icon-s-home",
         }
-    },
-    {
-        name: "VuexDemo",
-        path: "/home/VuexDemo",
-        component: VuexDemo,
-        meta: {
-            title: "VuexDemo案例",
-            icon: "el-icon-s-order",
-        }
-    },
-    {
-        name: "game",
-        path: "/home/game",
-        component: Game,
-        meta: {
-            title: "游戏",
-            icon: "el-icon-menu",
-        },
-        children: [
-            {
-                name: "gobang",
-                path: "/home/game/gobang",
-                component: Gobang,
-                meta: {
-                    title: "五子棋",
-                },
-            },
-            {
-                name: "tank",
-                path: "/home/game/tank",
-                component: Tank,
-                meta: {
-                    title: "坦克大战",
-                },
-            },
-        ],
-    },
-    {
-        name: "SVGStudy",
-        path: "/home/SVGStudy",
-        component: SVGStudy,
-        meta: {
-            title: "SVG练习",
-            icon: "el-icon-s-marketing",
-        },
-    },
-    {
-        name: "WXModuleTool",
-        path: "/home/WXModuleTool",
-        component: WXModuleTool,
-        meta: {
-            title: "微信链接工具",
-            icon: "el-icon-s-data",
-        },
     },
     {
         name: "about",
